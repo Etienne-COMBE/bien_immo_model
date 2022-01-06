@@ -1,0 +1,1 @@
+# bien_immo_model
