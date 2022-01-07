@@ -1,0 +1,26 @@
+from django.db import models
+
+# Create your models here.
+class Bien(models.Model):
+    id_lot =  models.fields.CharField(max_length=200)
+    nb_piece = models.IntegerField()
+    typologie = models.fields.CharField(max_length=200)
+    prix_tva_reduite = models.FloatField(null=True)
+    prix_tva_normale = models.FloatField(null=True)
+    prix_HT = models.FloatField(null=True)
+    prix_m2_HT = models.FloatField(null=True)
+    prix_m2_TTC = models.FloatField(null=True)
+    surface = models.FloatField(null=True)
+    etage = models.FloatField(null=True)
+    orientation = models.fields.CharField(max_length=200)
+    exterieur = models.BooleanField()
+    balcony = models.BooleanField()
+    garden = models.BooleanField()
+    parking = models.BooleanField()
+    nom_programme = models.fields.CharField(max_length=200)
+    ville = models.fields.CharField(max_length=200)
+    departement = models.IntegerField()
+    date_fin_programme = models.fields.CharField(max_length=200)
+    adresse_entiere = models.fields.CharField(max_length=200)
+    promoteur = models.fields.CharField(max_length=200)
+    date_extraction = models.fields.CharField(max_length=200)
